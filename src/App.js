@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style/app.css"
+import Main from "./pages/main"
+import Nav from "./pages/navigation"
+import Project from "./pages/project"
+import Certification from "./pages/certification"
+import {BrowserRouter} from "react-router-dom";
+import StarsBack from "./3D/StarsBack"
+import Footer from "./pages/footer"
+import {useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [showSticky, setShowSticky] = useState(true);
+    return (
+            <BrowserRouter>
+                <div className="pages">
+                    <div className="BackgroundStars">
+                        <StarsBack/>
+                    </div>
+                    {showSticky && (
+                        <div className="sticky">
+                            <Nav/>
+                        </div>)}
+                        <section id={'main-section'}>
+                            <Main/>
+                        </section>
+                        <section id={'project-section'}>
+                            <Project/>
+                        </section>
+                        <section id={'certifications-section'}>
+                            <Certification setShowSticky={setShowSticky}/>
+                            <Footer/>
+                        </section>
+                </div>
+            </BrowserRouter>
+    )
 }
 
 export default App;

@@ -1,0 +1,87 @@
+
+ul{
+    padding: 0;
+    list-style: none;
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+.list-item{
+    text-decoration: none;
+    display: block;
+}
+.cards{
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+}
+.card{
+    padding: 5px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr) minmax(0, 0.1fr) 0.3fr;
+    height: 200px;
+    border-radius: 20px;
+    background: rgba(1,1,1,10%);
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 0 10px ;
+    transform: scale(1.01);
+}
+.card-blur {
+    filter: blur(3px);
+    transition: filter 300ms ease-out;
+}
+
+.project-image{
+    transform: scale(110%);
+    width: 100%;
+    height: auto;
+}
+.src-project{
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    grid-column:span 3;
+    border-radius: 20px;
+    box-shadow: 0 0 1px;
+}
+.card-strip{
+    height: 2px;
+    opacity: 5%;
+    border-radius: 50%;
+    background: black;
+    margin: 10px;
+}
+
+.description{
+    grid-column: span 3;
+    top: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+    position: static;
+    height: 100%;
+    margin: 5px;
+    color: #9b87ac;
+}
+.name-description{
+    font-size: 15px;
+    margin: 0;
+    color: #BDD1BD;
+}
+.text-strip{
+    background: black;
+    width: 1px;
+    opacity: 10%;
+}
+.icon{
+    display: block;
+    width: 40px;
+}
+.modelchair{
+    width: 100%;
+    height: 100%;
+}

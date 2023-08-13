@@ -64,12 +64,10 @@ li:hover .navLink{
 
 @media only screen and (max-width: 767px) {
     .navbar {
-        flex-direction: column;
     }
 
-    .nav {
+    .navLink{
         font-size: small;
-        margin: 5px;
     }
 
     li:hover a {

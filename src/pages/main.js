@@ -34,9 +34,9 @@ export default function Main() {
             <div className={'models'}>
                 <div className={'sphere'}>
                     <SphereScene/>
-                    <div className={'Me'}>
-                        <Pose/>
-                    </div>
+                </div>
+                <div className={'Me'}>
+                    <Pose/>
                 </div>
             </div>
         </div>

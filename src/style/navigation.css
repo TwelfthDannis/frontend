@@ -63,9 +63,6 @@ li:hover .navLink{
 }
 
 @media only screen and (max-width: 767px) {
-    .navbar {
-    }
-
     .navLink{
         font-size: medium;
     }
@@ -73,5 +70,4 @@ li:hover .navLink{
         font-size: x-large;
         transition: font-size 1s ease;
     }
-
 }

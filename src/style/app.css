@@ -2,6 +2,10 @@ body {
     margin: 0;
     position: relative;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+}
 ::-webkit-scrollbar {
     width: 0;
 }

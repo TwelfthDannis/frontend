@@ -18,11 +18,14 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: x-large;
+}
+.navLink{
     text-transform: uppercase;
+    font-size: x-large;
     margin: 0 10px 0 10px;
     text-decoration: none;
     color: #BDD1BD;
+    transition: font-size 1s ease;
 }
 
 .nav li {
@@ -54,11 +57,8 @@ li:hover .block {
     transition: width 1s ease;
 }
 
-li:hover a{
+li:hover .navLink{
     font-size: xx-large;
-    transition: font-size 1s ease;
-}
-a{
     transition: font-size 1s ease;
 }
 

@@ -17,16 +17,16 @@ export default function Navigation() {
             <div className="navbar">
                 <div className="nav">
                     <li className={'list-nav'}>
-                        <Link to={'/'} className='nav' onClick={() => scrollToSection('main-section')}> Home</Link>
+                        <Link to={'/'} className='navLink' onClick={() => scrollToSection('main-section')}> Home</Link>
                         <div className="block"/>
                     </li>
                     <li className={'list-nav'}>
-                        <Link to="/project" className='nav'
+                        <Link to="/project" className='navLink'
                               onClick={() => scrollToSection('project-section')}> Project</Link>
                         <div className="block"/>
                     </li>
                     <li className={'list-nav'}>
-                        <Link to="/certification" className='nav'
+                        <Link to="/certification" className='navLink'
                               onClick={() => scrollToSection('certifications-section')}> Certification</Link>
                         <div className="block"/>
                     </li>

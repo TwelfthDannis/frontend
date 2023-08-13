@@ -45,8 +45,16 @@ export default function Project() {
                                 </div>
                                 <div className="text-strip"/>
                                 <div className="icons">
-                                    <a href={'#'} rel="noreferrer" target="_blank"><AiOutlineGithub/></a>
-                                    <a href={'#'} rel="noreferrer" target="_blank"><AiOutlineGlobal/></a>
+                                    <a href={'#'} rel="noreferrer" target="_blank">
+                                        <div className="linkIcon">
+                                            <AiOutlineGithub className={'icon'}/>
+                                        </div>
+                                    </a>
+                                    <a href={'#'} rel="noreferrer" target="_blank">
+                                        <div className="linkIcon">
+                                            <AiOutlineGlobal className={'icon'}/>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             {index < cards.length - 1 && (

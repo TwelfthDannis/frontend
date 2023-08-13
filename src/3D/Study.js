@@ -1,20 +1,15 @@
 
 import React, {Suspense, useEffect, useRef} from 'react'
-import {useGLTF, useAnimations, OrbitControls} from '@react-three/drei'
+import {useGLTF, useAnimations} from '@react-three/drei'
 import {Canvas, useThree} from "@react-three/fiber";
 
 export function StudyComponent(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/study.glb')
   const { actions } = useAnimations(animations, group)
-  const playAnimation = (animationName) => {
-    actions[animationName].play();
-  };
   useEffect(() => {
-    playAnimation("ArmatureAction");
-    return () => {
-    };
-  }, [actions,playAnimation]);
+    actions[animations[0].name].play()
+  })
 
   const materialWithoutDepthWrite = materials.Wolf3D_Avatar.clone();
   materialWithoutDepthWrite.depthWrite = true;

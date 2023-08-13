@@ -1,6 +1,5 @@
-
 .container{
-    height: 90vh;
+    height: 95vh;
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     align-items: center;
@@ -14,6 +13,7 @@
 }
 .text{
     color: #9b87ac;
+    width: 101%;
 }
 .models {
     position: relative;
@@ -27,12 +27,6 @@
     position: absolute;
     width: 100%;
     height: 90vh;
-}
-.Compact{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 85vh;
 }
 .Me {
     top: 0;

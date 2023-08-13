@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import "../style/project.css";
 import screenshot from "./screenshot.png";
 import ChairModel from "../3D/Chairmodel"
-import github from "../Icons/github.svg"
-import website from "../Icons/website.png"
+import {AiOutlineGithub, AiOutlineGlobal} from "react-icons/ai";
 
 export default function Project() {
     const [activeCard, setActiveCard] = useState(-1);
@@ -46,8 +45,8 @@ export default function Project() {
                                 </div>
                                 <div className="text-strip"/>
                                 <div className="icons">
-                                    <a href={'#'}><img className={'icon'} src={github} alt="github"/></a>
-                                    <a href={'#'}><img className={'icon'} src={website} alt="website"/></a>
+                                    <a href={'#'} rel="noreferrer" target="_blank"><AiOutlineGithub/></a>
+                                    <a href={'#'} rel="noreferrer" target="_blank"><AiOutlineGlobal/></a>
                                 </div>
                             </div>
                             {index < cards.length - 1 && (

@@ -21,13 +21,14 @@ export default function Certification({showSticky, setShowSticky}) {
 
     const cards = [
         {id: 1, src: screenshot, alt: "Project1"},
+        {id: 2, src: screenshot, alt: "Project2"},
     ];
     return (
-        <dov className="container1">
+        <div className="container1">
             <div className="cards">
                 <ul>
                     {cards.map((card, index) => (
-                        <li className={'list-item'}>
+                        <li className={'list-item'} key={card.id}>
                             <div className="box">
                                 <div className="certification-image">
                                     <img className={'image'} src={java} alt={'java-cerification'} onClick={() => openModal({ src: java, alt: 'java-cerification' })}/>
@@ -53,6 +54,6 @@ export default function Certification({showSticky, setShowSticky}) {
                     <img src={selectedImage.src} alt={selectedImage.alt} style={{ width: "100%", cursor: "zoom-out" }} />
                 </div>
             )}
-        </dov>
+        </div>
     )
 }

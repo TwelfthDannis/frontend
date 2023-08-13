@@ -67,10 +67,9 @@ li:hover .navLink{
     }
 
     .navLink{
-        font-size: small;
+        font-size: medium;
     }
-
-    li:hover a {
+    li:hover .navLink{
         font-size: x-large;
         transition: font-size 1s ease;
     }

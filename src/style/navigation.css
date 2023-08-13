@@ -61,3 +61,20 @@ li:hover a{
 a{
     transition: font-size 1s ease;
 }
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav {
+        font-size: small;
+        margin: 5px;
+    }
+
+    li:hover a {
+        font-size: x-large;
+        transition: font-size 1s ease;
+    }
+
+}
